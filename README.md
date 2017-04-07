@@ -26,3 +26,8 @@ Create configuration file /etc/matterpipe.json
 ##### Step 3
 
 Okay, Have fun!!!
+
+### How to use it?
+
+	ls -la / | mp  
+
