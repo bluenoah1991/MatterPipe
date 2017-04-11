@@ -127,7 +127,7 @@ func main() {
 
 	post := &model.Post{}
 	post.ChannelId = currentChannel.Id
-	post.Message = string(inputBytes)
+	post.Message = fmt.Sprintf("```\r\n%s\r\n```\r\n", string(inputBytes))
 	post.RootId = ""
 
 	if _, err := client.CreatePost(post); err != nil {
